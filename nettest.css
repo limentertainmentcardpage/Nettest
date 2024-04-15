@@ -140,4 +140,26 @@ body {
   height: 50px;
   position: relative;
 }
+.email__input:focus+.email__label {
+  top: 0.2rem;
+  font-size: 10px;
+}
 
+.email__input:not(:placeholder-shown).email__input:not(:focus)+.email__label {
+  top: 0.2rem;
+  font-size: 10px;
+}
+
+.email__input:focus-visible {
+  outline: none;
+}
+
+.primary__button {
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-radius: 2px;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
